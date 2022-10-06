@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_thongtin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phan Quang Nhã\n2050531200240"
+            android:fontFamily="@font/atma_medium"
+            android:gravity="center"
+            android:textColor="@color/teal_200"
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/edt_them"
+            android:layout_below="@+id/tv_thongtin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên phim"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edt_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giới thiệu phim"
+            android:layout_below="@id/edt_them"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/bt_them"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_hint"
+            android:background="@drawable/colorgradi"
+            android:text="Thêm"
+            android:textColor="@color/black" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_them"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
